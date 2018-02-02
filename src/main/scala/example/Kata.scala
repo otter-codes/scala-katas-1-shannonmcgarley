@@ -5,6 +5,17 @@ import scala.io.StdIn
 object Kata extends App {
 
 val EnterAWord = StdIn.readLine("Enter A Word " )
-  println(EnterAWord.tail.init)
+
+  removeFandLletter(EnterAWord)
+
+  def removeFandLletter(word : String) {
+
+    if (word.length < 2) {
+      println("")
+    }
+    else{
+      println(EnterAWord.tail.init)
+    }
+  }
 }
 
